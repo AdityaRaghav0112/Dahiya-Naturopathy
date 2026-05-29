@@ -17,11 +17,11 @@ const Header = () => {
   }, [hoveredIndex])
 
   return (
-    <header className="bg-white text-black">
+    <header className="bg-primary text-gray-300 fixed z-50 w-full">
       <div className="flex items-center justify-between px-12 py-6 mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <span className="font-semibold tracking-wide text-black">
+          <span className="font-semibold tracking-wide text-white">
             Dahiya <span className="text-yellow-600">Naturopathy</span>
           </span>
         </div>
@@ -31,7 +31,7 @@ const Header = () => {
           {/* Animated grey pill background */}
           {hoveredIndex !== null && (
             <div
-              className="absolute bg-gray-300 rounded-full h-10 top-1/2 transform -translate-y-1/2 transition-all duration-300 ease-out"
+              className="absolute bg-yellow-600 rounded-full h-10 top-1/2 transform -translate-y-1/2 transition-all duration-300 ease-out"
               style={pillStyle}
             />
           )}
@@ -50,7 +50,7 @@ const Header = () => {
         </nav>
 
         {/* Book a call button */}
-        <button className="text-xs bg-white text-yellow-600 px-6 py-2 border border-yellow-600 font-semibold hover:bg-yellow-200 transition-colors duration-400">
+        <button className="text-xs bg-primary text-yellow-600 px-6 py-2 border border-yellow-600 font-semibold hover:bg-yellow-400/15 transition-colors duration-300">
           BOOK CONSULITATION
         </button>
       </div>
