@@ -13,11 +13,7 @@ const Working = () => {
     const container = containerRef.current;
 
     if (!cards || !container) return;
-
-    // Wait for next frame to ensure DOM is fully rendered
     const timer = setTimeout(() => {
-      // Calculate the scroll distance needed
-      // Add half the container width to center the last card
       const scrollDistance = cards.scrollWidth - container.clientWidth / 1.2;
 
       if (scrollDistance <= 0) return;
