@@ -17,7 +17,8 @@ const Working = () => {
     // Wait for next frame to ensure DOM is fully rendered
     const timer = setTimeout(() => {
       // Calculate the scroll distance needed
-      const scrollDistance = cards.scrollWidth - container.clientWidth;
+      // Add half the container width to center the last card
+      const scrollDistance = cards.scrollWidth - container.clientWidth / 1.2;
 
       if (scrollDistance <= 0) return;
 
@@ -27,7 +28,7 @@ const Working = () => {
         scrollTrigger: {
           trigger: container,
           start: "top top",
-          end: `+=${scrollDistance}`,
+          end: `+=${scrollDistance + 200}`,
           scrub: 1, // Smooth scrubbing
           markers: false, // Set to true for debugging
           pin: true, // Pin the section while scrolling
@@ -42,9 +43,10 @@ const Working = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative h-[90vh] bg-primary overflow-hidden">
+    <div ref={containerRef} className="relative h-screen bg-[#0b1d12] overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-[0.25px] bg-yellow-600" />
       {/* Absolute positioned text */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-10 flex flex-col items-start px-20">
+      <div className="absolute top-20 left-0 w-full h-full pointer-events-none z-10 flex flex-col items-start px-20">
         <p className="text-secondary text-xs">How it works</p>
         <h1 className="text-5xl font-cormorant font-bold text-white mt-4">
           Five Pathways to <br />
@@ -59,29 +61,29 @@ const Working = () => {
       {/* Horizontal scrolling cards */}
       <div
         ref={cardsContainerRef}
-        className="flex items-start justify-start gap-8 pt-96 px-20"
+        className="flex items-start justify-start gap-8 pt-86 px-20"
       >
-        <div className="flex-shrink-0 bg-white p-6 rounded-lg w-200 h-80">
+        <div className="flex-shrink-0 bg-white p-6 rounded-lg w-200 h-100">
           <div className="w-full h-full flex items-center justify-center text-gray-400">
             Card 1
           </div>
         </div>
-        <div className="flex-shrink-0 bg-white p-6 rounded-lg w-200 h-80">
+        <div className="flex-shrink-0 bg-white p-6 rounded-lg w-200 h-100">
           <div className="w-full h-full flex items-center justify-center text-gray-400">
             Card 2
           </div>
         </div>
-        <div className="flex-shrink-0 bg-white p-6 rounded-lg w-200 h-80">
+        <div className="flex-shrink-0 bg-white p-6 rounded-lg w-200 h-100">
           <div className="w-full h-full flex items-center justify-center text-gray-400">
             Card 3
           </div>
         </div>
-        <div className="flex-shrink-0 bg-white p-6 rounded-lg w-200 h-80">
+        <div className="flex-shrink-0 bg-white p-6 rounded-lg w-200 h-100">
           <div className="w-full h-full flex items-center justify-center text-gray-400">
             Card 4
           </div>
         </div>
-        <div className="flex-shrink-0 bg-white p-6 rounded-lg w-200 h-80">
+        <div className="flex-shrink-0 bg-white p-6 rounded-lg w-200 h-100">
           <div className="w-full h-full flex items-center justify-center text-gray-400">
             Card 5
           </div>

@@ -17,7 +17,7 @@ const Header = () => {
   }, [hoveredIndex])
 
   return (
-    <header className="bg-primary text-gray-300 fixed z-50 w-full">
+    <header className="bg-transparent text-gray-300 absolute z-50 w-full">
       <div className="flex items-center justify-between px-12 py-6 mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-2">
