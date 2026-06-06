@@ -40,7 +40,7 @@ const Working = () => {
 
   return (
     <div ref={containerRef} className="relative h-screen bg-[#0b1d12] overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-[0.25px] bg-yellow-600" />
+      <div className="absolute top-0 left-0 w-full h-[0.25px] bg-yellow-600 opacity-50" />
       {/* Absolute positioned text */}
       <div className="absolute top-20 left-0 w-full h-full pointer-events-none z-10 flex flex-col items-start px-20">
         <p className="text-secondary text-xs">How it works</p>
@@ -48,7 +48,7 @@ const Working = () => {
           Five Pathways to <br />
           <span className="text-yellow-600">Natural Balance</span>
         </h1>
-        <p className="text-white max-w-xl opacity-45 mt-6">
+        <p className="text-white text-sm max-w-xl opacity-45 mt-6">
           Each therapeutic action works in concert with the body's innate
           intelligence — no shortcuts, no synthetic intervention.
         </p>

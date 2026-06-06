@@ -33,9 +33,10 @@ const Hero = () => {
         </p>
       </div>
       <div className="absolute bottom-1.5 left-0 w-full z-30">
-        <div className="flex items-center justify-between px-20">
-          <div className="text-center h-[0.25px] bg-yellow-600 z-20 w-3xl" />
-          <div className="text-center h-[0.25px] bg-yellow-600 z-20 w-3xl" />
+        <div className="flex items-end justify-between px-20">
+          <div className="text-center h-[0.25px] bg-yellow-600 z-20 w-3xl opacity-25" />
+          {/* <p>⭐</p> */}
+          <div className="text-center h-[0.25px] bg-yellow-600 z-20 w-3xl opacity-25" />
         </div>
       </div>
     </div>

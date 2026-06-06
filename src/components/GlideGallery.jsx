@@ -26,15 +26,15 @@ const GlideGallery = () => {
         <img src={dummy1} alt="Gallery 1" />
       </figure>
 
-      <figure className="image-2" string="glide[]" data-string-glide="0.5">
+      <figure className="image-2" string="glide[]" data-string-glide="2.0">
         <img src={dummy2} alt="Gallery 2" />
       </figure>
 
-      <figure className="image-3" string="glide[]" data-string-glide="0.0">
+      <figure className="image-3" string="glide[]" data-string-glide="3.0">
         <img src={dummy3} alt="Gallery 3" />
       </figure>
 
-      <figure className="image-4" string="glide[]" data-string-glide="0.5">
+      <figure className="image-4" string="glide[]" data-string-glide="2.0">
         <img src={dummy4} alt="Gallery 4" />
       </figure>
 
