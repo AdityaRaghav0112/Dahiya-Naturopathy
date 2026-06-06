@@ -21,7 +21,7 @@ const Ingredient = () => {
 
         <div className="flex flex-col gap-6 mt-8">
           <div className="flex gap-4">
-            <div className="w-12 h-12 rounded-full border border-yellow-600 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-full border border-yellow-600 flex items-center justify-center flex-shrink-0 cursor-default">
               <span className="text-yellow-600 text-lg">🌿</span>
             </div>
             <div>

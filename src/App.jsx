@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Working from './components/Working'
 import Ingredient from './components/Ingredient'
+import Consume from './components/Consume'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <Working/>
       <Ingredient/>
+      <Consume/>
     </div>
   )
 }
