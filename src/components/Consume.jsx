@@ -61,7 +61,7 @@ function FeatureCard({
     <div
       ref={cardRef}
       className={[
-        'rounded-2xl border border-black/10 p-8',
+        'rounded-lg border border-black/10 p-8',
         'flex flex-col justify-between',
         'transition-all duration-300 ease-out',
         'cursor-pointer',
@@ -109,25 +109,25 @@ function FeatureCard({
 export default function Consume() {
   const consumeItems = [
     {
-      title: 'Method 1',
+      title: 'Fresh Preparation',
       description:
-        'Apply topically to affected areas for direct absorption and immediate relief.',
+        'Consume fresh, as prepared and advised directly by the clinic. The therapeutic potency is highest when consumed at point of preparation.',
       icon: '💆',
       tone: 'emerald',
       className: ''
     },
     {
-      title: 'Method 2',
+      title: 'Structured Routine',
       description:
-        'Mix with warm water or milk for enhanced bioavailability and better results.',
+        'Integrate into a structured dietary routine with clinical guidance. Consistency within a holistic nutritional framework amplifies results.',
       icon: '🥛',
       tone: 'sky',
       className: ''
     },
     {
-      title: 'Method 3',
+      title: 'Sustained Practice',
       description:
-        'Combine with complementary herbs and spices to amplify therapeutic effects.',
+        'Best outcomes are achieved through sustained, consistent practice over time. Metabolic transformation is a gradual, respectful process.',
       icon: '🌿',
       tone: 'amber',
       className: ''
@@ -146,7 +146,7 @@ export default function Consume() {
         </div>
       </div>
 
-      <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
         {consumeItems.map((item) => (
           <FeatureCard
             key={item.title}

@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Working from './components/Working'
 import Ingredient from './components/Ingredient'
 import Consume from './components/Consume'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Working/>
       <Ingredient/>
       <Consume/>
+      <Footer/>
     </div>
   )
 }
