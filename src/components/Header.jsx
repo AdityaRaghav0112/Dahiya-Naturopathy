@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react'
 const Header = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
   const [pillStyle, setPillStyle] = useState({})
-  const navItems = ['Work', 'Services', 'Pricing', 'Contact']
+  const navItems = ['Work', 'About', 'Pricing', 'Contact']
   const buttonRefs = useRef([])
 
   useEffect(() => {
@@ -15,6 +15,21 @@ const Header = () => {
       })
     }
   }, [hoveredIndex])
+
+  const handleNavClick = (item) => {
+    const sectionMap = {
+      'Contact': 'contact',
+      'About': 'about'
+    }
+    
+    const sectionId = sectionMap[item]
+    if (sectionId) {
+      const section = document.getElementById(sectionId)
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }
 
   return (
     <header className="bg-transparent text-gray-300 absolute z-50 w-full">
@@ -42,6 +57,7 @@ const Header = () => {
               ref={(el) => (buttonRefs.current[index] = el)}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
+              onClick={() => handleNavClick(item)}
               className="relative px-4 py-2 text-sm font-medium transition-colors duration-200 z-10"
             >
               {item}

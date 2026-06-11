@@ -22,23 +22,23 @@ const GlideGallery = () => {
       {/* <span className="note -mm -up -tac">(Disabled on mobile devices by default)</span>
       <p>Order is temporary — tension is permanent.</p> */}
 
-      <figure className="image-1" string="glide[]" data-string-glide="1.0">
+      <figure className="image-1" string="glide[]" data-string-glide="0.5">
         <img src={dummy1} alt="Gallery 1" />
       </figure>
 
-      <figure className="image-2" string="glide[]" data-string-glide="2.0">
+      <figure className="image-2" string="glide[]" data-string-glide="1.0">
         <img src={dummy2} alt="Gallery 2" />
       </figure>
 
-      <figure className="image-3" string="glide[]" data-string-glide="3.0">
+      <figure className="image-3" string="glide[]" data-string-glide="1.5">
         <img src={dummy3} alt="Gallery 3" />
       </figure>
 
-      <figure className="image-4" string="glide[]" data-string-glide="2.0">
+      <figure className="image-4" string="glide[]" data-string-glide="1.0">
         <img src={dummy4} alt="Gallery 4" />
       </figure>
 
-      <figure className="image-5" string="glide[]" data-string-glide="1.0">
+      <figure className="image-5" string="glide[]" data-string-glide="0.5">
         <img src={dummy5} alt="Gallery 5" />
       </figure>
     </div>

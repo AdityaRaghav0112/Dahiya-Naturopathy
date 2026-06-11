@@ -3,7 +3,7 @@ import GlideGallery from "./GlideGallery";
 
 const Ingredient = () => {
   return (
-    <div className="bg-primary h-screen w-full flex relative">
+    <div id="about" className="bg-primary h-screen w-full flex relative">
       
       <div className="flex flex-col items-start px-20 pt-25 h-full gap-4">
         <div className="flex gap-2">
